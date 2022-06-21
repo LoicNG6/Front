@@ -7,6 +7,20 @@ import RegistrationView from '../views/authentication/RegistrationView.vue'
 const routes = [
   {
     path: '/',
+    redirect:'/login',
+  },
+  {
+    path: '/login',
+    component: LoginView,
+    name: 'login',
+  },
+  {
+    path: '/registration',
+    component: RegistrationView,
+    name: 'registration',
+  },
+  {
+    path: '/home',
     component: HomeView,
     name: 'home',
   },
@@ -18,17 +32,8 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
-  {
-    path: '/login',
-    component: LoginView,
-    name: 'login',
-  },
-  {
-    path: '/registration',
-    component: RegistrationView,
-    name: 'registration',
-  }
-  
+
+
 ]
 
 const router = createRouter({
