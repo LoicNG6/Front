@@ -34,7 +34,7 @@
           CONNEXION
         </VBtn>
       </VRow>
-      <VRow style="margin-top: 10%;" justify="center">
+      <VRow style="font-size: 0.8em;" class="mt-10" justify="center">
         <a href="registration">Je n'ai pas de compte et je veux m'inscrire</a>
       </VRow>
     </form>
@@ -55,7 +55,7 @@ export default {
   methods: {
     login() {
       console.log("succes");
-      this.$router.push({name: 'registration'});
+      this.$router.push({ name: 'registration' });
     }
   },
 }
