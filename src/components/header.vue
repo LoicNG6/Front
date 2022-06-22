@@ -1,29 +1,20 @@
 <template>
-  <v-card
-    flat
-    tile
-  >
-    <v-toolbar
-      color="cyan"
-      dark
-    >
-
+  <v-card flat tile>
+    <v-toolbar color="cyan" dark>
       <v-toolbar-title>Let's Talk</v-toolbar-title>
-
-
-      <v-btn >
+      <v-btn>
         ARTICLES
       </v-btn>
 
-      <v-btn >
+      <v-btn>
         ÉVENEMENTS
       </v-btn>
 
-      <v-btn to="about" >
+      <v-btn to="about">
         QUI SOMMES-NOUS ?
       </v-btn>
 
-      <v-btn >
+      <v-btn>
         LOGIN
       </v-btn>
 
@@ -31,14 +22,13 @@
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </v-toolbar>
-    
+
   </v-card>
 </template>
 
 <script>
 
 export default {
-  name: 'HomeView',
-  
+  name: 'HeaderView',
 }
 </script>

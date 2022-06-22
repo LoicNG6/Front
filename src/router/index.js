@@ -4,6 +4,8 @@ import HomeView from '../views/mainPage/Home.vue'
 import LoginView from '../views/authentication/LoginView.vue'
 import RegistrationView from '../views/authentication/RegistrationView.vue'
 import AboutView from '../views/AboutView.vue'
+import ArticleView from '../views/article/ArticleView.vue'
+import ArticleCreateView from '../views/article/ArticleCreateView.vue'
 
 const routes = [
   {
@@ -25,6 +27,16 @@ const routes = [
     component: HomeView,
     name: 'home',
     children: [
+      {
+        path:'/article',
+        component: ArticleView,
+        name:'article',
+      },
+      {
+        path:'/create-article',
+        component: ArticleCreateView,
+        name:'create-article',
+      },
       {
         path: '/about',
         component: AboutView,
