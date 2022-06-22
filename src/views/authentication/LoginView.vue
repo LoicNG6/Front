@@ -6,7 +6,7 @@
   <VContainer style=" width: 30%; margin-bottom: 5%;">
     <VRow justify="center">
       <VCol cols="auto">
-        <img alt="Let's talk logo" :src="require('../../assets/app_logo.png')" width="50" height="50">
+        <img alt="Let's talk logo" :src="require('../../assets/letstalk_logo.png')" width="50" height="50">
       </VCol>
       <VCol cols="auto">
         <h1 class='blue-text' style="text-transform:uppercase">Let's Talk</h1>
