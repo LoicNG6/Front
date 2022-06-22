@@ -20,12 +20,18 @@
         <VCol>
           <label for="" class="label-text">E-MAIL</label>
           <input class="input" type="email" placeholder="E-mail" required v-model="email" />
+          <span v-if="credentialsChecked.email == false" style="color: red; font-size:0.6em">
+            Adresse mail inconnue
+          </span>
         </VCol>
       </VRow>
       <VRow justify="center" align="center">
         <VCol>
           <label for="" class="label-text">PASSWORD</label>
-          <input class="input" type="password" placeholder="Password" required v-model="password" />
+          <input class="input" type="password" placeholder="Password" req0uired v-model="password" />
+          <span v-if="credentialsChecked.email == false" style="color: red; font-size:0.6em">
+            Mot de passe incorrect
+          </span>
         </VCol>
       </VRow>
       <VRow justify="center" style="margin-top: 10%;">
@@ -50,12 +56,25 @@ export default {
     return {
       email: null,
       password: null,
+      credentialsChecked: {},
     }
   },
   methods: {
     login() {
-      console.log("succes");
-      this.$router.push({ name: 'registration' });
+      this.axios
+        .post("route_vers_l'api", {
+          email: this.email,
+          password: this.password,
+        })
+        .then((res) => {
+          this.$router.push({ name: 'home' });
+          console.log(res.data);
+        })
+        .catch((error) => {
+          console.log(error);
+          if (error.response.email) this.credentialsChecked.email = false;
+          if (error.response.password) this.credentialsChecked.password = false;
+        });
     }
   },
 }
