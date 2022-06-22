@@ -55,7 +55,7 @@ export default {
   methods: {
     login() {
       console.log("succes");
-      this.$router.push({ name: 'registration' });
+      this.$router.push({ name: 'home' });
     }
   },
 }
