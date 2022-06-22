@@ -3,12 +3,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/mainPage/Home.vue'
 import LoginView from '../views/authentication/LoginView.vue'
 import RegistrationView from '../views/authentication/RegistrationView.vue'
-
+import AboutView from '../views/AboutView.vue'
 
 const routes = [
   {
     path: '/',
-    redirect:'/login',
+    redirect: '/login',
   },
   {
     path: '/login',
@@ -24,6 +24,13 @@ const routes = [
     path: '/home',
     component: HomeView,
     name: 'home',
+    children: [
+      {
+        path: '/about',
+        component: AboutView,
+        name: 'about'
+      },
+    ],
   },
   {
     path: '/about',
@@ -33,8 +40,6 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
-
-
 ]
 
 const router = createRouter({

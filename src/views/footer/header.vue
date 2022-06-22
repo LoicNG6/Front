@@ -19,7 +19,7 @@
         ÉVENEMENTS
       </v-btn>
 
-      <v-btn >
+      <v-btn to="about" >
         QUI SOMMES-NOUS ?
       </v-btn>
 
