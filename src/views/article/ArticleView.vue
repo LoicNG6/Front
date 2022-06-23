@@ -1,6 +1,6 @@
 <template>
     <HeaderView />
-    <v-container fluid style="height: 100%; border:solid">
+    <v-container fluid style="height: 100%">
         <v-row>
             <v-col cols="auto">
                 In the Article page
