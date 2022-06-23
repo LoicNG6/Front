@@ -1,5 +1,5 @@
 <template>
-  <v-footer color="primary lighten-1" padless style="position:absolute;
+  <v-footer color="primary lighten-1" padless style="
    bottom:0;
    width:100%;">
     <v-row justify="center" no-gutters>
@@ -19,12 +19,12 @@ export default {
 
   data: () => ({
     links: [
-      'Home',
-      'About Us',
-      'Team',
+      'Accueil',
+      'À propos de nous',
+      "L'équipe",
       'Services',
       'Blog',
-      'Contact Us',
+      'Nous contacter',
     ],
   }),
 }

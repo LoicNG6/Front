@@ -1,9 +1,9 @@
 <template>
   <v-card flat tile>
-    <v-toolbar color="cyan" dark>
+    <v-toolbar color="cyan" dark style="text-transform:capitalize">
       <v-toolbar-title>Let's Talk</v-toolbar-title>
       <v-btn v-if="$route.name !='home'" to="home">
-        Home
+        Accueil
       </v-btn>
 
       <v-btn v-if="$route.name != 'articles'" to="articles">
@@ -18,8 +18,8 @@
         QUI SOMMES-NOUS ?
       </v-btn>
 
-      <v-btn>
-        LOGIN
+      <v-btn to="login">
+        Se déconnecter
       </v-btn>
 
       <v-btn icon>
