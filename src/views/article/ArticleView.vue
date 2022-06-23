@@ -1,6 +1,15 @@
 <template>
     <HeaderView />
-        In the ArticleView
+    <v-container fluid style="height: 100%; border:solid">
+        <v-row>
+            <v-col cols="auto">
+                In the Article page
+            </v-col>
+            <v-col>
+                <v-btn to="create-article">Create</v-btn>
+            </v-col>
+        </v-row>
+    </v-container>
     <FooterView />
 </template>
 
