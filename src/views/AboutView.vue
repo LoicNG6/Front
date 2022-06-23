@@ -1,7 +1,7 @@
 <template>
   <Header></Header>
   <VContainer fluid class="px-8">
-    <VRow justify="center" class="my-8" style="text-align:center;">
+    <VRow justify="center" class="my-4" style="text-align:center;">
       <VCol cols="12">
         <h3 style="text-transform: capitalize;">Qui sommes-nous ?</h3>
       </VCol>
@@ -11,7 +11,7 @@
       </VCol>
     </VRow>
     <VDivider></VDivider>
-    <VRow justify="center" class="my-8">
+    <VRow justify="center" class="my-4">
       <VCol cols="12">
         <h3 style="text-transform: capitalize;">Pourquoi Let's Talk ?</h3>
       </VCol>
@@ -20,7 +20,7 @@
       </VCol>
     </VRow>
     <VDivider></VDivider>
-    <VRow justify="center" class="my-8">
+    <VRow justify="center" class="my-4">
       <VCol cols="12">
         <h3 style="text-transform: capitalize;">L'histoire</h3>
       </VCol>
@@ -29,7 +29,7 @@
       </VCol>
     </VRow>
     <VDivider></VDivider>
-    <VRow justify="center" class="my-8" style="text-align:center;">
+    <VRow justify="center" class="my-4" style="text-align:center;">
       <VCol cols="12">
         <h3 style="text-transform: capitalize;">Contact</h3>
       </VCol>
