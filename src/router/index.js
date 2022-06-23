@@ -4,6 +4,7 @@ import HomeView from '../views/mainPage/Home.vue'
 import LoginView from '../views/authentication/LoginView.vue'
 import RegistrationView from '../views/authentication/RegistrationView.vue'
 import AboutView from '../views/AboutView.vue'
+import ArticlesView from '@/views/Articles.vue'
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
         name: 'about'
       },
     ],
+  },
+  {
+    path: '/articles',
+    component: ArticlesView,
+    name: 'articles'
   },
   {
     path: '/about',
