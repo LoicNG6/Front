@@ -41,8 +41,8 @@
 </template>
 
 <script>
-import Header from './footer/header.vue';
-import Footer from './footer/footer.vue';
+import Header from '../components/header.vue';
+import Footer from '../components/footer.vue';
 export default {
   name: "AboutView",
   components: {
