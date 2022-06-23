@@ -28,9 +28,9 @@ const routes = [
     name: 'home',
     children: [
       {
-        path:'/article',
+        path:'/articles',
         component: ArticleView,
-        name:'article',
+        name:'articles',
       },
       {
         path:'/create-article',

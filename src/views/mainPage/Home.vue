@@ -1,6 +1,6 @@
 <template>
-  <Header></Header>
-  <v-content>
+  <v-content v-if="$route.name == 'home'">
+    <Header></Header>
     <v-container fluid fill-height>
       <v-flex xs12 sm6 offset-sm3>
         <v-card>
@@ -26,7 +26,6 @@
                 <v-btn flat color="orange">Share</v-btn>
               </div>
             </div>
-
             <div>
               <h3 class="headline mb-0">
                 ÉVENEMENTS
@@ -50,9 +49,9 @@
         </v-card>
       </v-flex>
     </v-container>
+    <Footer></Footer>
   </v-content>
   <router-view class="pa-0" />
-  <Footer></Footer>
 </template>
 
 <script>
