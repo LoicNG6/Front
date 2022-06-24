@@ -11,7 +11,7 @@
                         <v-item v-slot="{ active, toggle }">
                             <v-card :color="active ? 'primary' : ''" class="d-flex align-center" dark height="200"
                                 @click="toggle">
-                                <v-img src="../assets/logo.svg"></v-img>
+                                <v-img src="../../assets/letstalk_logo.png"></v-img>
                                 derniers articles {{ n }}
                             </v-card>
                         </v-item>
@@ -33,7 +33,7 @@
                         <v-item v-slot="{ active, toggle }">
                             <v-card :color="active ? 'primary' : ''" class="d-flex align-center" dark height="200"
                                 @click="toggle">
-                                <v-img src="../assets/logo.svg"></v-img>
+                                <v-img src="../../assets/letstalk_logo.png"></v-img>  
                                 articles pop {{ n }}
                             </v-card>
                         </v-item>
@@ -54,7 +54,7 @@
                         <v-item v-slot="{ active, toggle }">
                             <v-card :color="active ? 'primary' : ''" class="d-flex align-center" dark height="200"
                                 @click="toggle">
-                                <v-img src="../assets/logo.svg"></v-img>
+                                <v-img src="../../assets/letstalk_logo.png"></v-img>
                                 tous articles {{ n }}
                             </v-card>
                         </v-item>
@@ -68,13 +68,16 @@
 </template>
 
 <script>
-import Header from './footer/header.vue'
-import Footer from './footer/footer.vue'
+import Header from '../../components/header.vue'
+import Footer from '../../components/footer.vue'
 export default {
     name: 'ArticlesView',
     components: {
         Header,
         Footer,
     },
+    // mounted(){
+    //     console.log("this.article", this.article);
+    // }
 }
 </script>
