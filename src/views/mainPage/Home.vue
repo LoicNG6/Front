@@ -6,12 +6,11 @@
       <v-flex xs12 sm6 offset-sm3>
         <!-- remplacer dans mon carroussel, colors par entertainment -->
         <v-carousel v-model="change_carroussel">
-          <v-carousel-item v-for="(color, i) in colors" :key="color">
-            <v-sheet :color="color.title" height="100%" tile>
+          <v-carousel-item v-for="(article, i) in articles" :key="article">
+            <v-sheet :color="article.color" height="100%" tile>
               <v-row class="fill-height" align="center" justify="center">
                 <div class="text-h2">
-                  Slide {{ i + 1 }}
-                  {{ color.title }}
+                  Article {{ i + 1 }} : {{ article.title }}
                 </div>
               </v-row>
             </v-sheet>
@@ -31,7 +30,7 @@
                   </v-col>
                 </v-row>
                 <v-row>
-                  <v-col cols="4" style="border:solid green">
+                  <v-col cols="4">
                     <v-card></v-card>
                   </v-col>
                 </v-row>
@@ -78,15 +77,21 @@ export default {
   data() {
     return {
       change_carroussel: 0,
-      articles: [],
       events: {},
       faits_divers: [],
-      colors: [
-        { title: 'primary' },
-        { title: 'secondary' },
-        { title: 'yellow' },
-        { title: 'red' },
-        { title: 'orange' },
+      articles: [
+        {
+          title: 'MBAPPE Reste !',
+          color: 'primary'
+        },
+        {
+          title: 'Présidentielles 2022',
+          color: 'secondary',
+        },
+        {
+          title: 'Canicule à paris..',
+          color: 'yellow'
+        },
       ],
     }
   },
