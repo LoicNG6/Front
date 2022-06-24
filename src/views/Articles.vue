@@ -3,90 +3,67 @@
     <v-content>
         <v-item-group class="last-articles">
             <v-container>
-                <v-title> <h1>Articles récents</h1> </v-title><br/>
-            <v-row>
-                <v-col
-                v-for="n in 5"
-                :key="n"
-                cols="13"
-                md="4"
-                >
-                <v-item v-slot="{ active, toggle }">
-                    <v-card
-                    :color="active ? 'primary' : ''"
-                    class="d-flex align-center"
-                    dark
-                    height="200"
-                    @click="toggle"
-                    >
-                    <v-img src="../assets/logo.svg"></v-img>
-                    derniers articles {{n}}
-                    </v-card>
-                </v-item>
-                </v-col>
-            </v-row>
+                <v-title>
+                    <h1>Articles récents</h1>
+                </v-title><br />
+                <v-row>
+                    <v-col v-for="n in 5" :key="n" cols="13" md="4">
+                        <v-item v-slot="{ active, toggle }">
+                            <v-card :color="active ? 'primary' : ''" class="d-flex align-center" dark height="200"
+                                @click="toggle">
+                                <v-img src="../assets/logo.svg"></v-img>
+                                derniers articles {{ n }}
+                            </v-card>
+                        </v-item>
+                    </v-col>
+                </v-row>
             </v-container>
         </v-item-group>
-    
-        <v-divider inset/>
+
 
         <v-item-group class="popular-articles">
             <v-container>
-                <v-title> <h1>Articles populaires</h1> </v-title><br/>
-            <v-row>
-                <v-col
-                v-for="n in 5"
-                :key="n"
-                cols="13"
-                md="4"
-                >
-                <v-item v-slot="{ active, toggle }">
-                    <v-card
-                    :color="active ? 'primary' : ''"
-                    class="d-flex align-center"
-                    dark
-                    height="200"
-                    @click="toggle"
-                    >
-                    <v-img src="../assets/logo.svg"></v-img>
-                    articles pop {{n}}
-                    </v-card>
-                </v-item>
-                </v-col>
-            </v-row>
+                <v-divider class="mt-6 mb-8" />
+
+                <v-title>
+                    <h1>Articles populaires</h1>
+                </v-title><br />
+                <v-row>
+                    <v-col v-for="n in 5" :key="n" cols="13" md="4">
+                        <v-item v-slot="{ active, toggle }">
+                            <v-card :color="active ? 'primary' : ''" class="d-flex align-center" dark height="200"
+                                @click="toggle">
+                                <v-img src="../assets/logo.svg"></v-img>
+                                articles pop {{ n }}
+                            </v-card>
+                        </v-item>
+                    </v-col>
+                </v-row>
             </v-container>
         </v-item-group>
 
-        <v-divider inset/>
 
         <v-item-group class="all-articles">
             <v-container>
-                <v-title> <h1>Tous les articles</h1> </v-title><br/>
-            <v-row>
-                <v-col
-                v-for="n in 5"
-                :key="n"
-                cols="13"
-                md="4"
-                >
-                <v-item v-slot="{ active, toggle }">
-                    <v-card
-                    :color="active ? 'primary' : ''"
-                    class="d-flex align-center"
-                    dark
-                    height="200"
-                    @click="toggle"
-                    >
-                    <v-img src="../assets/logo.svg"></v-img>
-                    tous articles {{n}}
-                    </v-card>
-                </v-item>
-                </v-col>
-            </v-row>
+                <v-divider class="mt-6 mb-8" />
+                <v-title>
+                    <h1>Tous les articles</h1>
+                </v-title><br />
+                <v-row>
+                    <v-col v-for="n in 5" :key="n" cols="13" md="4">
+                        <v-item v-slot="{ active, toggle }">
+                            <v-card :color="active ? 'primary' : ''" class="d-flex align-center" dark height="200"
+                                @click="toggle">
+                                <v-img src="../assets/logo.svg"></v-img>
+                                tous articles {{ n }}
+                            </v-card>
+                        </v-item>
+                    </v-col>
+                </v-row>
             </v-container>
         </v-item-group>
 
-      </v-content>
+    </v-content>
     <Footer></Footer>
 </template>
 
@@ -94,10 +71,10 @@
 import Header from './footer/header.vue'
 import Footer from './footer/footer.vue'
 export default {
-  name: 'ArticlesView',
-  components: {
-    Header,
-    Footer,
-  },
+    name: 'ArticlesView',
+    components: {
+        Header,
+        Footer,
+    },
 }
 </script>
