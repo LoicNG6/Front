@@ -6,6 +6,7 @@
         <h3 style="text-transform: capitalize;">Qui sommes-nous ?</h3>
       </VCol>
       <VCol cols="5">
+        Let's talk est une jeune startup créée en 2020 par 5 étudiants qui voulaient avoir une plateforme réunissant de nombreux articles et revues de presse sur des livres.
       </VCol>
     </VRow>
     <VDivider></VDivider>
