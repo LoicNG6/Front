@@ -1,9 +1,7 @@
 <template>
   <v-footer color="primary lighten-1" padless style="
-    position:absolute;
    bottom:0;
-   width:100%;
-   ">
+   width:100%;">
     <v-row justify="center" no-gutters>
       <v-btn v-for="link in links" :key="link" color="white" text rounded class="my-2">
         {{ link }}
@@ -17,16 +15,16 @@
 
 <script>
 export default {
+  name: 'FooterView',
 
-  name: 'HomeView',
   data: () => ({
     links: [
-      'Home',
-      'About Us',
-      'Team',
+      'Accueil',
+      'À propos de nous',
+      "L'équipe",
       'Services',
       'Blog',
-      'Contact Us',
+      'Nous contacter',
     ],
   }),
 }
