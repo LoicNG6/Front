@@ -32,7 +32,7 @@
                 </v-row>
                 <v-row>
                   <v-col cols="4" style="border:solid green">
-                    <v-card style="border: solid;"></v-card>
+                    <v-card></v-card>
                   </v-col>
                 </v-row>
               </v-col>
