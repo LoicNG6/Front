@@ -4,7 +4,6 @@
 
     <v-container fluid fill-height>
       <v-flex xs12 sm6 offset-sm3>
-
         <!-- remplacer dans mon carroussel, colors par entertainment -->
         <v-carousel v-model="change_carroussel">
           <v-carousel-item v-for="(color, i) in colors" :key="color">
@@ -20,45 +19,43 @@
         </v-carousel>
 
         <v-card>
-          <v-card-title primary-title>
-            <div>
-              <h3 class="headline mb-0">
-                ARTICLES
-              </h3>
-              <div>
-                <p>
-                  Quick example of collapsable mobile menu
-                  <tt>&lt;v-toolbar&gt;</tt>, with a
-                  <tt>&lt;v-menu&gt;</tt> for mobile screens.
-                </p>
-                <p>
-                  Also shows how to use <tt>.hidden-md-and-up</tt> CSS
-                  classes to appropriately hide/show the menu depending upon
-                  window width.
-                </p>
+          <v-card-title primary-title class="blue-text" style="text-align: center; font-size: 1em;">
+            <v-row>
+              <v-col cols="8">
+                <v-row justify="center">
+                  <v-col cols="12">
+                    <h3>Articles</h3>
+                  </v-col>
+                  <v-col>
+                    <span>Retrouve ici, toutes les derniers nouveautés de nos journaliste du monde entier</span>
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col cols="4" style="border:solid green">
+                    <v-card style="border: solid;"></v-card>
+                  </v-col>
+                </v-row>
+              </v-col>
+              <v-col cols="3">
+                <h3 class="headline mb-0">
+                  ÉVENEMENTS
+                </h3>
+                <div>
+                  <p>
+                    Quick example of collapsable mobile menu
+                    <tt>&lt;v-toolbar&gt;</tt>, with a
+                    <tt>&lt;v-menu&gt;</tt> for mobile screens.
+                  </p>
+                  <p>
+                    Also shows how to use <tt>.hidden-md-and-up</tt> CSS
+                    classes to appropriately hide/show the menu depending upon
+                    window width.
+                  </p>
 
-                <v-btn flat color="orange">Share</v-btn>
-              </div>
-            </div>
-            <div>
-              <h3 class="headline mb-0">
-                ÉVENEMENTS
-              </h3>
-              <div>
-                <p>
-                  Quick example of collapsable mobile menu
-                  <tt>&lt;v-toolbar&gt;</tt>, with a
-                  <tt>&lt;v-menu&gt;</tt> for mobile screens.
-                </p>
-                <p>
-                  Also shows how to use <tt>.hidden-md-and-up</tt> CSS
-                  classes to appropriately hide/show the menu depending upon
-                  window width.
-                </p>
-
-                <v-btn flat color="orange">Share</v-btn>
-              </div>
-            </div>
+                  <v-btn flat color="orange">Share</v-btn>
+                </div>
+              </v-col>
+            </v-row>
           </v-card-title>
         </v-card>
       </v-flex>
