@@ -45,7 +45,7 @@
 </template>
 
 <script>
-
+import axios from 'axios';
 export default {
   name: 'LoginView',
 
@@ -57,6 +57,14 @@ export default {
   },
   methods: {
     login() {
+      axios
+        .get('https://127.0.0.1:8000/api/login_check')
+        .then((res) => {
+          console.log(res)
+        })
+        .catch((error) => {
+          console.log(error);
+        })
       console.log("succes", this.$route);
       this.$router.push({ name: 'home' });
     }
