@@ -1,7 +1,5 @@
 <template>
-  <v-footer color="primary lighten-1" padless style="
-   bottom:0;
-   width:100%;">
+  <v-footer padless style="bottom:0; width:100%; background-color: #a0c3ff;">
     <v-row justify="center" no-gutters>
       <v-btn v-for="link in links" :key="link" color="white" text rounded class="my-2">
         {{ link }}
